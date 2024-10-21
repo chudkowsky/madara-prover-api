@@ -126,7 +126,7 @@ pub fn run_bootloader_in_proof_mode(
     tasks: Vec<TaskSpec>,
 ) -> Result<ExecutionArtifacts, ExecutionError> {
     let proof_mode = true;
-    let layout = "recursive";
+    let layout = "recursive_large_output";
 
     let cairo_run_config = CairoRunConfig {
         entrypoint: "main",
