@@ -126,7 +126,7 @@ pub fn run_bootloader_in_proof_mode(
     tasks: Vec<TaskSpec>,
 ) -> Result<ExecutionArtifacts, ExecutionError> {
     let proof_mode = true;
-    let layout = "starknet_with_keccak";
+    let layout = "recursive";
 
     let cairo_run_config = CairoRunConfig {
         entrypoint: "main",
